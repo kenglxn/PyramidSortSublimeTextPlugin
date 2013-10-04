@@ -1,7 +1,7 @@
 import sublime, sublime_plugin
 
 def pyramid_sort(txt):
-	txt = filter(None, txt)
+	txt = filter(lambda s: s.strip(), txt)
 	txt.sort(key = lambda s: len(s))
 	return txt
 
