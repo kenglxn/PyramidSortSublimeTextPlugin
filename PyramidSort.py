@@ -1,7 +1,3 @@
-#
-# 123
-# 12
-# 1
 
 import sublime, sublime_plugin
 
@@ -12,11 +8,10 @@ def pyramid_sort(txt):
 
 class PyramidSortCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
-		regions = [s for s in self.view.sel() if not s.empty()]
-		if regions:			
-			for r in regions:
-				lr = self.view.line(r)
-				txt = self.view.substr(lr)
-				lines = txt.splitlines()
-				lines = pyramid_sort(lines)
-				self.view.replace(edit, lr, u"\n".join(lines))
+		for s in self.view.sel():
+			ls = self.view.line(s)
+			txt = self.view.substr(ls)
+			end = "\n" if txt[-1] == "\n" else ""
+			lines = txt.splitlines()
+			lines = pyramid_sort(lines)
+			self.view.replace(edit, ls, u"\n".join(lines) + end)
