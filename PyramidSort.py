@@ -1,4 +1,3 @@
-
 import sublime, sublime_plugin
 
 def pyramid_sort(txt):
