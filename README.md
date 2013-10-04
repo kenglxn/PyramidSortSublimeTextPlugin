@@ -20,11 +20,16 @@ Becomes:
     barolainen
 
 
-### Installing from command line
+### Installing
 
-Simply clone this repository into the Packages folder of sublime. E.g:
+#### Sublime 2
     
     cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+    git clone https://github.com/kenglxn/PyramidSortSublimeTextPlugin.git
+
+#### Sublime 3
+
+    cd ~/Library/Application\ Support/Sublime\ Text/Packages/
     git clone https://github.com/kenglxn/PyramidSortSublimeTextPlugin.git
 
 ### Alternative
