@@ -37,7 +37,3 @@ Becomes:
 There is a [SortBy package](https://sublime.wbond.net/packages/SortBy) available through Package Control 
 that has a variety of sorting commands, including by length ascending and descending. 
 If more advanced sorting is your cup of tea, then you should probably give it a look.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kenglxn/pyramidsortsublimetextplugin/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
